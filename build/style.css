@@ -341,24 +341,22 @@ footer {
 #memories {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  text-align: center;
-}
-
-/* image gallery section  */
-.gallery-wrapper {
-  overflow: scroll;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 10px;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   background: #f4f4f9;
   margin-top: 300px;
+  text-align: center;
 }
 
+/* image gallery section  */
+::-webkit-scrollbar{
+  width: 0;
+}
 .gallery {
+  overflow-y: scroll;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
