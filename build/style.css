@@ -157,12 +157,14 @@ main > section {
 
 .home__details h3 {
   color: #222;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .home__details .burial-date{
   display: flex;
-  text-align: center;
+  flex-direction: column;
+  /* gap: 10px; */
+  /* text-align: center; */
 }
 .home__details .burial-date p {
   margin-left: 10px;
@@ -341,25 +343,73 @@ display: flex;
 align-items: center;
 justify-content: flex-start;
 flex-direction: column;
+overflow: scroll;
+text-align: center;
 }
 
-#memories .gallery {
+/* image gallery section  */
+.gallery-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #f4f4f9;
+  margin-top: 300px;
+}
+
+.gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  margin-top: 20px;
+  gap: 10px;
+  width: 90%;
+  max-width: 800px;
 }
 
-#memories .gallery .gallery-card{
-  text-align: center;
-  box-shadow: var(--shadow);
+.gallery-img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-#memories .gallery .gallery-card img{
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
+.gallery-img:hover {
+  transform: scale(1.05);
 }
 
-.gallery .gallery-card{
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
 
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.close-btn:hover {
+  transform: scale(1.5);
 }

@@ -56,7 +56,9 @@
             </div>
             <div class="burial-date">
               <h3>Burial Date:</h3>
-              <p>3 December 2024</p>
+              <p>3 December 2024, Tuesday</p>
+              <h3>Candle Lighting:</h3>
+              <p>2 December 2024, Monday</p>
             </div>
             <a href="#directions" class="btn">
               Get Directions
@@ -95,10 +97,12 @@
       <section id="memories">
         <h2>Memories With Friends and Family</h2>
         <div class="gallery">
-          <div class="gallery-card">
-            <img src="img/guka.jpg" alt="image 1" class="gallery-img" />
-            <p class="gallery-img-caption">Samwel himself</p>
-          </div>
+          <!-- will be loaded by javascript -->
+        </div>
+
+        <div class="lightbox" id="lightbox">
+          <span class="close-btn">&times;</span>
+          <img src="" alt="Expanded view" class="lightbox-img" />
         </div>
       </section>
       <section id="grievances">
@@ -155,5 +159,6 @@
       copyright &copy; 2024 by <a href="tel:+254110046523">Lewis Mwaura</a>. All
       right reserved.
     </footer>
+    <script src="gallery.js" defer></script>
   </body>
 </html>
