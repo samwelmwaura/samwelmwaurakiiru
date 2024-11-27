@@ -160,7 +160,7 @@ main > section {
   margin-bottom: 10px;
 }
 
-.home__details .burial-date{
+.home__details .burial-date {
   display: flex;
   flex-direction: column;
   /* gap: 10px; */
@@ -170,7 +170,7 @@ main > section {
   margin-left: 10px;
   font-size: 1.2rem;
   font-weight: 500;
-  color: #FF6700;
+  color: #ff6700;
 }
 
 .btn {
@@ -218,14 +218,14 @@ iframe {
   padding-left: 1.5rem;
 }
 
-#grievances {
+#condolences {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
 }
-#grievances form {
+#condolences form {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -236,11 +236,11 @@ iframe {
   max-width: 400px;
   box-shadow: var(--shadow);
 }
-#grievances form h2 {
+#condolences form h2 {
   text-align: center;
 }
 
-#grievances form :is(input, textarea) {
+#condolences form :is(input, textarea) {
   width: 100%;
   padding: 8px;
   border-radius: 5px;
@@ -292,7 +292,7 @@ footer {
   color: #666;
 }
 
-.memories{
+.memories {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,22 +333,22 @@ footer {
   .home__details h2 {
     text-align: center;
   }
-.home__details .burial-date{
-  justify-content: center;
-}
+  .home__details .burial-date {
+    justify-content: center;
+  }
 }
 
-#memories{
-display: flex;
-align-items: center;
-justify-content: flex-start;
-flex-direction: column;
-overflow: scroll;
-text-align: center;
+#memories {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
 }
 
 /* image gallery section  */
 .gallery-wrapper {
+  overflow: scroll;
   display: flex;
   align-items: center;
   justify-content: center;
