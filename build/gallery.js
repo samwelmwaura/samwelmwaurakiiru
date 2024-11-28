@@ -7,9 +7,8 @@ const closeBtn = document.querySelector(".close-btn");
 
 const addImg = (e) => {
   for (let i = 1; i <= 10; i++) {
-    const int = Math.floor(Math.random() * 100);
     const image = document.createElement("img");
-    image.src = `https://picsum.photos/id/${int}/1080/1920`;
+    image.src = `img/image${i}.jpg`;
     image.classList.add("gallery-img");
     image.alt = `Gallery Image ${i}`;
 
@@ -21,6 +20,7 @@ const addImg = (e) => {
 };
 
 window.addEventListener("DOMContentLoaded", addImg);
+// window.addEventListener("DOMContentLoaded", fetchImages);
 
 const imageView = (gallery) => {
   const images = gallery.querySelectorAll(".gallery-img");
@@ -28,6 +28,7 @@ const imageView = (gallery) => {
     img.addEventListener("click", (e) => {
       lightBox.classList.add("open");
       lightBoxImg.src = img.src;
+      lightBoxImg.alt = img.alt;
     });
   });
 
