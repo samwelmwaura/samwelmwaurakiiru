@@ -6,7 +6,7 @@ const gallery = document.querySelector(".gallery");
 const closeBtn = document.querySelector(".close-btn");
 
 const addImg = (e) => {
-  for (let i = 1; i <= 10; i++) {
+  for (let i = 1; i <= 20; i++) {
     const image = document.createElement("img");
     image.src = `img/image${i}.jpg`;
     image.classList.add("gallery-img");
